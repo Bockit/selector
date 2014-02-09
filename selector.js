@@ -25,8 +25,9 @@ function Selector(elements) {
         var params = Array.prototype.slice.call(arguments, 1)
         var action = fn.isFilter ? 'filter' : 'map'
 
-        return chain(elements[action](function(el) {
+        return chain(elements[action](function(el, i) {
             var args = params.slice()
+            if (action === 'filter') args.unshift(i)
             args.unshift(el)
             return fn.apply(null, args)
         }))
