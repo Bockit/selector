@@ -39,7 +39,7 @@ function chain(arr) {
     // with the array else just the thing.
     var flat = flatten(arr)
     for(var i = 0; i < flat.length; i++) {
-        if (flat[i] && flat[i].nodeName)) {
+        if (flat[i] && flat[i].nodeName) {
             return arr.length === 1 ? arr[0] : arr
         }
     }
