@@ -22,11 +22,5 @@
   "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/bockit/selector/issues"
-  },
-  "dependencies": {
-    "lodash.identity": "~2.4.1",
-    "lodash.flatten": "~2.4.1",
-    "lodash.assign": "~2.4.1",
-    "lodash.uniq": "~2.4.1"
   }
 }
